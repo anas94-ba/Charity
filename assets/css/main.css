@@ -1,0 +1,368 @@
+html{
+    --primary-color:#60bc0f;
+    --primary-font:"Roboto", sans-serif;
+    --secondary-color:#fff;
+}
+body{
+    font-family: var(--primary-font);
+
+}
+.custom-padding{
+    padding: 20rem 20rem;
+}
+.w-90{
+    width: 90%;
+}
+.w-70{
+    width: 70%;
+}
+.m-t-100{
+    margin-top: 6rem;
+}
+.bc-color-primary{
+    background-color: var(--primary-color);
+
+}
+.color-sec{
+    color:#777777;
+}
+
+@media screen and (max-width:560px){
+    html{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:360px){
+    html{
+        font-size: 1px;
+    }
+}
+
+
+/** header start **/
+.header{
+    height: 120vh;
+}
+.navbar-nav .nav-link{
+        font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+        color: var(--secondary-color);
+}
+.header .bg-dark{
+    background:transparent ;
+    background-color: transparent !important;
+
+}
+
+.dropdown-hover:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  margin-top: 0;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+    color:var(--primary-color);
+}
+
+.bg-image{
+    background: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)), url(../images/public/header-bg.webp) no-repeat scroll center center;
+    background-image: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)), url(../images/public/header-bg.webp);
+    background-position-x: initial, center;
+    background-position-y: initial, center;
+    background-size: initial, initial;
+    background-repeat: initial, no-repeat;
+    background-attachment: initial, scroll;
+    background-origin: initial, initial;
+    background-clip: initial, initial;
+    background-color: initial;
+    background-size: cover;
+}
+
+.btn-success:hover{
+    background-color: transparent;
+    border: 1px var(--primary-color) solid;
+    color: var(--primary-color);
+}
+.btn-warning:hover{
+     background-color: transparent;
+    border: 1px #fdbb00  solid;
+    
+}
+
+@media screen and (max-width:560px) {
+    .header .bg-dark{
+        background-color: #000 !important;
+
+    }
+
+    
+}
+
+
+/** header end **/
+
+/*causes section start*/
+.causes p{
+    color: #777777;
+
+}
+.cause-card{
+    background-color: #f9fafc;
+}
+.causes-card:hover{
+    box-shadow: 0px 20px 30px rgba(153, 153, 153, 0.2);
+}
+
+
+
+/*causes section end*/
+
+/* team section start */
+
+
+.team-img{
+    margin-top: -50px;
+    margin-right: -120px;
+}
+.team-content{
+    box-shadow: 0px 20px 30px rgba(153, 153, 153, 0.2);
+    z-index: 10;
+    background-color: #fff;
+    padding: 7rem;
+}
+.team button{
+    background-color: var(--primary-color);
+    border-radius: 0;
+    border: none;
+    padding:1rem 2rem;
+}
+
+.team button:hover{
+    color: var(--primary-color);
+    background-color: #fff;
+    border: var(--primary-color) solid 1px;
+}
+.team p{
+    padding: 0.8rem;
+}
+
+
+
+
+
+/*team section end*/
+
+/*featured causes start*/
+.featured-cause .card .img-wrap{
+    transition:  all 300ms linear 0s;
+    overflow: hidden;
+     transform-origin: center;  /* zoom from center */
+}
+
+.featured-cause .card:hover img{
+    transform: scale(1.2);
+
+}
+
+
+
+
+/*featured causes end*/
+
+/* event section start*/
+.event:hover .btn{
+    background-color: #fdbb00;
+    color: #000 !important;
+
+}
+.event:hover h3{
+    color: #fdbb00;
+
+}
+
+.event .event-img {
+    width: 100%;
+    overflow: hidden;
+}
+.event .event-img  img{
+    width: 100%;
+}
+
+
+.event{
+    transition:  all 300ms linear 0s;
+    transform-origin: center;  /* zoom from center */
+
+}
+
+.event:hover img{
+    transform: scale(1.2);
+}
+
+/*events section end*/
+
+/*volunteer section start*/
+.volunteers i{
+    color: #777777;
+    border: black solid 1px;
+    border-radius: 50%;
+    padding: 4px;
+    width: 30px;
+    height: 30px;
+} 
+.volunteers i:hover{
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+
+/*volunteer section end*/
+
+/*become-volunteer section start*/
+.become-volunteer{
+    background-color: var(--primary-color);
+
+}
+
+.become-volunteer button{
+    background-color: #fdbb00;
+}
+.become-volunteer button:hover{
+    background-color: transparent;
+    border: solid 1px #fdbb00;
+}
+
+
+/*become-volunteer section end*/
+
+/*question section start*/
+.question{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.question .container{
+    position: absolute;
+    top: 50px;
+    
+
+    background-image: url('../images/public/bg-green.webp');
+    background-size: cover;      /* scale image to cover element */
+    background-position: center; /* center the image */
+    background-repeat: no-repeat;/* prevent tiling */
+}
+
+.question input{
+    border-radius: 3px;
+}
+
+.question input[type="submit"]{
+    background-color: #fdbb00;
+}
+.question input[type="submit"]:hover{
+    background-color: transparent;
+    border: solid 1px #fdbb00;
+}
+
+
+
+/*question section end*/
+
+
+/* footer section start*/
+footer{
+    background-color: #091b27;
+}
+footer .container{
+    padding-top: 100px;
+}
+footer .row h3,footer .row h2{
+    color:#fff;
+}
+footer .row p,footer .row a{
+    color: #777777;
+}
+footer a{
+    text-decoration: none;
+}
+footer ul{
+    list-style: none;
+}
+
+footer .img-fluid {
+    width: 100%;
+}
+
+footer h3{
+    color: var(--primary-color);
+}
+footer .row .col-lg-4 i{
+    color: #fff;
+    background-color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+footer .copyright{
+    background-color:  rgb(7, 23, 33);
+}
+footer .copyright p{
+    color: white;
+}
+
+footer .copyright a{
+    color: var(--primary-color);
+}
+footer .row i{
+    background-color: var(--primary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 15px;
+}
+
+
+
+/*footer section end*/
+
+/*map section start*/
+.map .row i{
+    color: var(--primary-color);
+    width: 40px; 
+    height:40px; 
+    font-size: 40px;
+}
+
+.map .row a{
+    text-decoration: none;
+    color: #000;
+}
+input[type='submit']{
+    background-color: var(--primary-color);
+    color: #fff;
+    width: fit-content;
+    border: none;
+}
+input[type='submit']:hover{
+    color: var(--primary-color);
+    background-color: #fff;
+    border: solid 1px var(--primary-color);
+}
+
+textarea::placeholder {
+  color: #342c2c;
+  opacity: 1;
+}
+
+
+
+
+
+
+/*map section end*/
